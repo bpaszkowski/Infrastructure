@@ -1,27 +1,159 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - basicSSHUserPrivateKey:
+          id: "jenkins_agent"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "jenkins"
 jenkins:
-  securityRealm:
-    local:
-      users:
-       - id: "panda"
-         password: "panda"
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
   authorizationStrategy:
     globalMatrix:
-      permissions:
-        - "Overall/Administer:panda"
-
-tool:
-  sonarRunnerInstallation:
-    installations:
-    - name: "SonarQube"
-      properties:
-      - installSource:
-          installers:
-          - sonarRunnerInstaller:
-              id: "5.0.1.3006"
-
+      entries:
+      - userOrGroup:
+          name: "panda"
+          permissions:
+          - "Overall/Administer"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "hudson.util.DoubleLaunchChecker"
+  labelAtoms:
+  - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  numExecutors: 0
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "panda"
+        name: "panda"
+        properties:
+        - "apiToken"
+        - "mailer"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - "experimentalFlags"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  gitHooks:
+    allowedOnAgents: false
+    allowedOnController: false
+  gitHostKeyVerificationConfiguration:
+    sshHostKeyVerificationStrategy: "knownHostsFileVerificationStrategy"
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: true
+  sSHD:
+    port: -1
 unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  enrichedSummaryConfig:
+    enrichedSummaryEnabled: false
+    httpClientDelayBetweenRetriesInSeconds: 1
+    httpClientMaxRetries: 3
+    httpClientTimeoutInSeconds: 1
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://192.168.44.44:8880/github-webhook/"
+  globalTimeOutConfiguration:
+    operations:
+    - "abortOperation"
+    overwriteable: false
+  injectionConfig:
+    allowUntrusted: false
+    checkForBuildAgentErrors: false
+    enabled: false
+    enforceUrl: false
+    injectCcudExtension: false
+    injectMavenExtension: false
+  junitTestResultStorage:
+    storage: "file"
+  locale:
+    ignoreAcceptLanguage: true
+    systemLocale: "en"
   location:
+    adminAddress: "adres jeszcze nie jest skonfigurowany <nobody@nowhere>"
     url: "http://192.168.44.44:8880/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  pluginImpl:
+    enableCredentialsFromNode: false
+  pollSCM:
+    pollingThreadCount: 10
+  prismConfiguration:
+    theme: PRISM
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
   sonarGlobalConfiguration:
     buildWrapperEnabled: true
     installations:
@@ -30,3 +162,23 @@ unclassified:
       triggers:
         skipScmCause: false
         skipUpstreamCause: false
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
+  sonarRunnerInstallation:
+    installations:
+    - name: "SonarQube"
+      properties:
+      - installSource:
+          installers:
+          - sonarRunnerInstaller:
+              id: "5.0.1.3006"
