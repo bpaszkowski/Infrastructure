@@ -1,15 +1,5 @@
 version: '2.4'
 services:
-  jenkins:
-    build: jenkins_controller
-    container_name: jenkins
-    ports:
-      - "8880:8080"
-      - "50000:50000"
-    restart: always
-    volumes:
-      - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
-
   artifactory:
     image: docker.bintray.io/jfrog/artifactory-jcr:7.39.4
     container_name: artifactory
@@ -25,6 +15,20 @@ services:
         interval: 5s
         timeout: 10s
         retries: 30
+
+
+  jenkins:
+    depends_on:
+      artifactory:
+        condition: service_healthy
+    build: jenkins_controller
+    container_name: jenkins
+    ports:
+    - "8880:8080"
+    - "50000:50000"
+    restart: always
+    volumes:
+      - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
 
   jenkins_agent:
     depends_on:
