@@ -41,6 +41,12 @@ credentials:
           username: "admin"
           password: "password"
           scope: GLOBAL
+
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/backend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/app_of_apps.groovy
+
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
