@@ -29,6 +29,7 @@ services:
     restart: always
     volumes:
       - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+      - ./jenkins_controller/jobs:/usr/share/jenkins/ref/jobs
 
   jenkins_agent:
     depends_on:
